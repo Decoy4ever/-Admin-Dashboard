@@ -3,14 +3,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 body{
-    width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr), 2fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "sidebar header header header"
     "sidebar main main main"
@@ -24,12 +24,12 @@ body{
     padding: 1rem;
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 0.2fr 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, clamp(100px, 80%, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
     justify-content: flex-start;
-    background-color: #0ECCFB;
-    color: white;
-    font-weight: bold;
+    border: 0.2rem solid green;
+    /* background-color: #0ECCFB; */
+    /* color: white; */
 }
 
 h3{
@@ -50,7 +50,40 @@ ul > li {
 
 .header{
     grid-area: header;
-    border: 2px solid green;
+    display: grid;
+    /* split the header into two rows */
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem 0 1rem 1rem;
+    overflow: auto;
+    /* border: 0.2rem solid blue; */
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.profile > * {
+    border: 0;
+    margin: 0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.profile-pics > * {
+    border: 0;
+    margin: 0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
+
+}
+
+input{
+    /* modify the width of the input box */
+    /* width: clamp(200px, 80%, 400px); */
+    border-radius: 4px;
+}
+
+.profile, .profile-pics{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 .main{
