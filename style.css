@@ -6,6 +6,7 @@
     font-size: 1rem;
 }
 
+
 body{
     min-height: 100vh;
     display: grid;
@@ -24,8 +25,10 @@ body{
     background-color: azure;
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: repeat(auto-fit, clamp(100px, 80%, 1fr));
-    justify-content: flex-start;
+    grid-template-rows: min-content repeat(2, 1fr);
+    justify-content: start;
+    background-color: #38bdf8;
+    color: white;
 }
 
 h3{
@@ -39,19 +42,38 @@ h4{
 
 ul{
     padding: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
 }
 
 ul > li {
-    /* remove dot points */
+    padding: 1rem;
     list-style: none;
-    font-size: 1rem;
-    padding: 1rem 0 1rem 0;
 }
+
+li ~ h4 {
+    /* padding-left: 1rem; */
+}
+
+
+img{
+    float: left;
+    width: 2rem;
+    height: 2rem;
+}
+
+[class ^= "icon"]{
+    fill: black;
+}
+
 
 .header{
     grid-area: header;
     display: grid;
-    /* split the header into two rows */
     grid-template-rows: repeat(2, 1fr);
     overflow: auto;
     justify-content: space-around;
