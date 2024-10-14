@@ -1,9 +1,10 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
-@import url(https://fonts.bunny.net/css?family=roboto:100);
+@import url(https://fonts.bunny.net/css?family=roboto:100,300,500,700,900);
 
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    font-weight: 300;
 }
 
 
@@ -21,26 +22,29 @@ body{
 
 .sidebar{
     margin: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: azure;
     grid-area: sidebar;
     display: grid;
     grid-template-rows: min-content 1fr;
     justify-content: start;
-    background-color: #38bdf8;
+    background-color: #4ade80;
     color: white;
 }
 
 h3{
     padding: 0;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 h4{
+    font-weight: 500;
+    font-size: 1.1rem;
     margin: 0;
 }
 
-ul{
+.sidebar-nav > ul, .acc-settings > ul{
     padding: 0;
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -56,11 +60,8 @@ ul > li {
     list-style: none;
 }
 
-
-
 img{
     fill: white;
-    color: white;
     float: left;
     width: 2rem;
     height: 2rem;
@@ -74,45 +75,39 @@ img{
 
 .header{
     grid-area: header;
+    background-color: #bbf7d0;
+    padding: 1rem;
+}
+
+.nav-bar > ul {
+    padding: 0;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    overflow: auto;
-    justify-content: space-around;
+    grid-template-columns: min-content 4fr min-content repeat(3, 0.5fr);
+    grid-template-rows: min-content;
     align-content: center;
     align-items: center;
-    background-color: antiquewhite;
 }
 
-.profile > * {
-    border: 0;
-    margin: 0 1rem 0 1rem;
-    padding: 0 1rem 0 1rem;
-}
-
-.profile-pics > * {
-    border: 0;
-    margin: 0 1rem 0 1rem;
-    padding: 0 1rem 0 1rem;
-
+.btn-options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 input{
     /* modify the width of the input box */
     /* width: clamp(200px, 80%, 400px); */
     border-radius: 4px;
+    margin: 0;
+
 }
 
-.profile, .profile-pics{
-    display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
-}
 
  .main{
     grid-area: main;
     display: grid;
     padding: 1rem;
-    background-color: azure;
+    background-color: #f3f4f6;
     grid-template-rows: min-content repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     align-content: space-around;
@@ -151,10 +146,18 @@ input{
 }
 
 .card{
-    border: 1px solid black;
-    /* width: 250px; */
-    /* height: 200px; */
-    /* overflow: auto; */
+    padding: 0.5rem;
+    border-style: solid;
+    border-color: #d6d3d1 #d6d3d1 #d6d3d1 #facc15;
+    border-radius: 4px;
+}
+
+.column-3 > .card {
+    border-color: #d6d3d1;
+}
+
+h4 > p{
+
 }
 
 
