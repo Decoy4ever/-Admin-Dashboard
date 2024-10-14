@@ -25,7 +25,7 @@ body{
     background-color: azure;
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: min-content repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
     justify-content: start;
     background-color: #38bdf8;
     color: white;
@@ -46,6 +46,7 @@ ul{
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content;
     text-align: left;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
 }
@@ -55,20 +56,20 @@ ul > li {
     list-style: none;
 }
 
-li ~ h4 {
-    /* padding-left: 1rem; */
-}
 
 
 img{
+    fill: white;
+    color: white;
     float: left;
     width: 2rem;
     height: 2rem;
 }
 
-[class ^= "icon"]{
-    fill: black;
-}
+/* [class ^= "icon"]{
+
+    fill: white;
+} */
 
 
 .header{
