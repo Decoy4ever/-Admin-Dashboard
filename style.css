@@ -20,44 +20,49 @@ body{
     "sidebar main main main";
 }
 
-.sidebar{
-    margin: 0;
-    /* padding: 1rem; */
-    background-color: azure;
-    grid-area: sidebar;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    justify-content: start;
-    background-color: #4ade80;
-    color: white;
-}
-
 h3{
-    padding: 0;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h4{
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+ul, h3, h4 {
+    padding: 0;
     margin: 0;
 }
 
-.sidebar-nav > ul, .acc-settings > ul{
-    padding: 0;
+/* SiderBar Starts */
+.sidebar{
+    margin: 0;
+    padding: 1rem;
+    background-color: azure;
+    grid-area: sidebar;
     display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: min-content;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: start;
+    background-color: #34d399;
+    color: white;
 }
 
 ul > li {
+    /* grid-row: 1 / 2; */
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding: 1rem;
     list-style: none;
+}
+
+
+.sidebar-header > img {
+    width: 4rem;
+    height: 4rem;
 }
 
 img{
@@ -66,40 +71,43 @@ img{
     width: 2rem;
     height: 2rem;
 }
+/* End of Siderbar */
 
-/* [class ^= "icon"]{
-
-    fill: white;
-} */
+.doctor{
+    width: 5rem;
+    height: 5rem;
+}
 
 
 .header{
     grid-area: header;
-    background-color: #bbf7d0;
+    background-color: #4ade80;
     padding: 1rem;
 }
 
-.nav-bar > ul {
+.header-navbar > ul {
     padding: 0;
     display: grid;
-    grid-template-columns: min-content 4fr min-content repeat(3, 0.5fr);
-    grid-template-rows: min-content;
-    align-content: center;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
-}
-
-.btn-options{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
+.btn-options{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+button{
+    width: 100%;
+}
+
 input{
-    /* modify the width of the input box */
-    /* width: clamp(200px, 80%, 400px); */
     border-radius: 4px;
     margin: 0;
-
+    width: 20vw;
 }
 
 
@@ -137,7 +145,7 @@ input{
     grid-row: 2 / 5;
     grid-column: 3 / 4;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(min-content,1fr)); 
+    grid-template-rows: 1fr min-contnet max-content;
 }
 
 .annoucement-header{
@@ -156,9 +164,25 @@ input{
     border-color: #d6d3d1;
 }
 
-h4 > p{
-
+.profile-card > * {
+    padding: 0;
 }
+
+.trending-msg {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+p{
+    margin: 0;;
+}
+
+
+
+
+
+
+
 
 
 
