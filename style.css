@@ -145,6 +145,16 @@ button{
     font-weight: 500;
 }
 
+button:hover {
+    background-color: #f87171;
+    opacity: 1;
+}
+
+button:active {
+    background-color: #b91c1c;
+    transform: translateY(0.2rem);
+}
+
 input{
     border-radius: 4px;
     margin: 0;
@@ -229,7 +239,6 @@ input{
 .trending-msg{
     grid-column: 1 / 3;
     display: grid;
-    /* grid-template-columns: min-content 1fr; */
     grid-template-columns: max-content 1fr;
     grid-template-rows: auto;
     gap: 1rem;

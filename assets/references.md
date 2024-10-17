@@ -1,7 +1,12 @@
-<a target="_blank" href="https://icons8.com/icon/S3yXCdE9wCUQ/futurama-fry">Futurama Fry</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icon/HcjiA09-5OSy/futurama-zoidberg">Futurama Zoidberg</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icon/qzpodiwSoTXX/futurama-bender">Futurama Bender</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icon/SDX-CrIXNWZj/futurama-professor-farnsworth">Futurama Professor Farnsworth</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icon/1uRQ-dEnlW3t/futurama-leela">Futurama Leela</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+References
+
+Icons from
+1. Icons8.com. (2021). Futurama Icons, Logos, Symbols – Free Download PNG, SVG. [online] Available at: https://icons8.com/icons/set/futurama [Accessed 17 Oct. 2024].
+
+Information from 
+‌2. to, C. (2024). Farnsworth’s Inventions. [online] Futurama Wiki. Available at: https://futurama.fandom.com/wiki/Category:Farnsworth%27s_Inventions [Accessed 17 Oct. 2024].
+
+
+
 
 
