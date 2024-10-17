@@ -22,7 +22,7 @@ body{
 
 h3{
     /* font-size: 2rem; */
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -48,7 +48,7 @@ ul, h3, h4 {
     grid-area: sidebar;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    justify-content: start;
+    align-items: center;
     background-color: #34d399;
     color: white;
 }
@@ -74,32 +74,67 @@ img{
     float: left;
     width: 2rem;
     height: 2rem;
+    /* border-radius: 50%; */
+    /* border-style: solid; */
+    /* border-color:#fafafa */
 }
 
-.doctor{
-    width: 5rem;
-    height: 5rem;
-}
 /* End of Siderbar */
 
-
-
+/* Start of Header */
 .header{
     grid-area: header;
     background-color: #4ade80;
     padding: 1rem;
-    /* align-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.header-navbar {
-    display: flex;
-    flex: 1;
+.profile-bottom, .profile-top {
     list-style: none;
 }
 
-.profile-intro + li {
-    margin-left: auto;
+.profile-top {
+    grid-column: 1 / 3;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 4fr repeat(2, max-content);
+    align-items: center;
 }
+
+.profile-top > .doctor-small {
+    width: 2rem;
+    height: 2rem;
+}
+
+.profile-bottom{
+    grid-column: 1 / 3;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr repeat(3, max-content);
+    /* align-items: center; */
+}
+
+button {
+    height: 2rem;
+    width: 5rem;
+}
+
+div > input {
+    min-width: 80%;
+    height: 2rem;
+}
+
+.profile-bottom {
+    grid-column: 1 / 3;;
+}
+
+.doctor-large{
+    width: 5rem;
+    height: 5rem;
+}
+
 
 button{
     background-color: #dc2626;
@@ -169,24 +204,34 @@ input{
     border-radius: 4px;
 }
 
-.main-card{
+.main-card, .col3-card{
     display: grid;
     grid-template-rows: 1fr min-content;
 }
 
-.profile-card {
-    display: grid;
+.profile-card, .annoucement-card {
     list-style: none;
+    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.profile-card > li, .annoucement-card > li {
+    padding: 0.1rem;
+}
+
+.momcorp-msg {
+    border-bottom: 0.2rem solid #d6d3d1;
+    border-top: 0.2rem solid #d6d3d1;
 }
 
 
 .trending-msg{
     grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: min-content;
+    /* grid-template-columns: min-content 1fr; */
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: auto;
     gap: 1rem;
 }
 
